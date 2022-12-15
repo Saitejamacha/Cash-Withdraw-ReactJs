@@ -1,0 +1,151 @@
+.main-con {
+  background-color: white;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.bg-con {
+  background-color: #150b3e;
+  border-radius: 15px;
+  height: 80vh;
+  width: 30vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.unorder-list {
+  display: flex;
+  width: 30vw;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-self: center;
+}
+.list-items {
+  display: flex;
+  align-self: center;
+  width: 30vw;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-right: 30px;
+}
+
+.user-con {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 30vw;
+  height: 20vh;
+  padding-left: 20px;
+}
+
+.user {
+  border-radius: 50px;
+  height: 50px;
+  width: 50px;
+  color: #7c3aed;
+  background-color: #c7d2fe;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.head {
+  color: #d4d2db;
+  font-size: 20px;
+  margin-left: 15px;
+}
+
+.mid-con {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  width: 30vw;
+}
+.balancePara {
+  color: #585076;
+  font-size: 20px;
+}
+.withdraw {
+  color: #d4d2db;
+  padding-left: 20px;
+}
+.balanceAmount {
+  color: #d4d2db;
+  padding-left: 20px;
+}
+.money {
+  color: #d4d2db;
+  padding-right: 20px;
+  font-weight: 400;
+  font-size: 25px;
+}
+.m-para {
+  color: #585076;
+  font-size: 20px;
+  padding-right: 20px;
+}
+
+.para {
+  color: #585076;
+  padding-left: 20px;
+}
+
+@media (max-width: 768px) {
+  .bg-con {
+    background-color: #150b3e;
+    border-radius: 15px;
+    height: 90vh;
+    width: 70vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .user-con {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50vw;
+    height: 20vh;
+    padding-left: 20px;
+  }
+
+  .user {
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    color: #7c3aed;
+    background-color: #c7d2fe;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .unorder-list {
+    display: flex;
+    width: 70vw;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  .list-items {
+    display: flex;
+
+    width: 70vw;
+    justify-content: flex-start;
+
+    flex-wrap: wrap;
+  }
+
+  .money-con {
+    display: flex;
+    justify-content: space-between;
+  }
+}
