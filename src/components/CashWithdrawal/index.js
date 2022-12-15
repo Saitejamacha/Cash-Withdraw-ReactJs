@@ -9,22 +9,14 @@ class CashWithdrawal extends Component {
     balance: 2000,
   }
 
-  getDenominationValue = value => {
-    const {balance} = this.state
-    if (balance >= value) {
-      this.setState(prevState => ({
-        balance: prevState.balance - value,
-      }))
-    } else {
-      alert('No enough balance')
-    }
+  updateAmount = value => {
+    this.setState(prevState => ({balance: prevState.balance - value}))
   }
 
   render() {
     const {denominationsList} = this.props
     const {balance} = this.state
 
-    // Sarah Williams
     return (
       <div className="main-con">
         <div className="bg-con">
@@ -51,7 +43,7 @@ class CashWithdrawal extends Component {
                 <DenominationItem
                   key={eachItem.id}
                   cashDeducting={eachItem}
-                  getDenominationValue={this.getDenominationValue}
+                  updateAmount={this.updateAmount}
                 />
               ))}
             </div>

@@ -1,25 +1,19 @@
-import {Component} from 'react'
 import './index.css'
 
-class DenominationItem extends Component {
-  onClickSendValue = () => {
-    const {cashDeducting, getDenominationValue} = this.props
-    const {value} = cashDeducting
-    getDenominationValue(value)
+const DenominationItem = props => {
+  const {cashDeducting, updateAmount} = props
+  const {value} = cashDeducting
+
+  const onClickSendValue = () => {
+    updateAmount(value)
   }
 
-  render() {
-    const {cashDeducting} = this.props
-    const {value} = cashDeducting
-
-    return (
-      <li className="list">
-        <button type="button" className="btn" onClick={this.onClickSendValue}>
-          {value}
-        </button>
-      </li>
-    )
-  }
+  return (
+    <li className="list">
+      <button type="button" className="btn" onClick={onClickSendValue}>
+        {value}
+      </button>
+    </li>
+  )
 }
-
 export default DenominationItem
